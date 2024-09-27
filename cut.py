@@ -72,7 +72,7 @@ def show_box(box, ax):
 
 
 def save_masks(image, masks, scores, point_coords=None, box_coords=None, input_labels=None, borders=True):
-    output_dir = os.path.expanduser("output")  # Hardcoded output directory
+    output_dir = os.path.expanduser("static")  # Hardcoded output directory
     os.makedirs(output_dir, exist_ok=True)  # Create the output directory if it does not exist
 
     for i, (mask, score) in enumerate(zip(masks, scores)):
