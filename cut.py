@@ -100,8 +100,8 @@ from sam2.sam2_image_predictor import SAM2ImagePredictor
 
 # sam2_checkpoint = "checkpoints/sam2_hiera_large.pt"
 # model_cfg = "sam2_hiera_l.yaml"
-sam2_checkpoint = "/workspace/segment-anything-2/checkpoints/sam2_hiera_large.pt"
-model_cfg = "/workspace/segment-anything-2/sam2_configs/sam2_hiera_l.yaml"
+sam2_checkpoint = "sam2_hiera_large.pt"
+model_cfg = "sam2_hiera_l.yaml"
 
 sam2_model = build_sam2(model_cfg, sam2_checkpoint, device=device)
 
