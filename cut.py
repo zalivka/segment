@@ -92,7 +92,7 @@ def save_masks(image, masks, scores, point_coords=None, box_coords=None, input_l
         plt.close(fig)
 
 # image = Image.open('images/truck.jpg')
-image = Image.open('images/be_crain.jpg')
+image = Image.open('images/truck.jpg')
 image = np.array(image.convert("RGB"))
 
 from sam2.build_sam import build_sam2
