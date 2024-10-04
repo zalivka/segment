@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Image</title>
+    <script>
+        function handleClick(event) {
+            var x = event.offsetX;
+            var y = event.offsetY;
+
+            fetch(`/get-coordinates?x=${x}&y=${y}`)
+                .then(response => console.log('Coordinates sent:', x, y))
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='be_crain.jpg') }}" onclick="handleClick(event)">
+</body>
+</html>
